@@ -42,6 +42,24 @@
   		<!-- =======================================================
   	* Author: 
   	======================================================== -->
+	<style>
+        #content-desktop {
+            display: block;
+        }
+        
+        #content-mobile {
+            display: none;
+        }
+        
+        @media screen and (max-width: 768px) {
+            #content-desktop {
+                display: none;
+            }
+            #content-mobile {
+                display: block;
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -100,7 +118,7 @@
 <div class="container-fluid">
         <div class="row flex-xl-nowrap">
 
-            <div class="col-xs-0 bd-sidebar">
+            <div id="content-desktop" class="col-xs-0 bd-sidebar">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBsSRI5qWC1_9tAWPfz4Y2xz7hBqMFMmZkqecQAoHAiP2hL7sY&usqp=CAU">
